@@ -4351,6 +4351,19 @@ input[type=button].btn-block {
   border-bottom-left-radius: 0.5rem;
 }
 
+.row-margin-05 { 
+  margin-top: 0.5em; 
+}
+.row-margin-10 { 
+  margin-top: 1.0em; 
+}
+.row-margin-20 { 
+  margin-top: 2.0em; 
+}
+.row-margin-30 { 
+  margin-top: 3.0em; 
+}
+
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
@@ -10119,7 +10132,8 @@ h3 {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.portfolio .portfolio-item .portfolio-item-caption {
+
+.portfolio .portfolio-item .portfolio-item-captionAdd {
   position: absolute;
   top: 0;
   left: 0;
@@ -10127,10 +10141,55 @@ h3 {
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+
+.portfolio .portfolio-item .portfolio-item-captionEdit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(188, 177, 26, 0.9);
+}
+
+.portfolio .portfolio-item .portfolio-item-captionList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 56, 188, 0.9);
+}
+
+.portfolio .portfolio-item .portfolio-item-captionDelete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(188, 50, 26, 0.9);
+}
+.portfolio .portfolio-item .portfolio-item-captionAdd:hover {
   opacity: 1;
 }
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+.portfolio .portfolio-item .portfolio-item-captionEdit:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-captionDelete:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-captionList:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-captionAdd .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+.portfolio .portfolio-item .portfolio-item-captionEdit .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+.portfolio .portfolio-item .portfolio-item-captionDelete .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+.portfolio .portfolio-item .portfolio-item-captionList .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
 
