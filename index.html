@@ -238,7 +238,7 @@
             </div>
         </div>
         <!--ModalListar-->
-        <div class="portfolio-modal modal fade" id="ListaPaciente" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="ListarPaciente" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -249,18 +249,50 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Lista De Pacientes</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-list"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    <!--Tabla Datos-->
+                                        <div class="table-responsive">
+                                            <table id="Tabla" class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Rut</th>
+                                                        <th>Nombre</th>
+                                                        <th>Apellido</th>
+                                                        <th>Direccion</th>
+                                                        <th>Doctor</th>
+                                                        <th>Remedios</th>
+                                                        <th>Problemas</th>
+                                                        <th>Numero</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="TbodyTablaPacientes">
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Rut</th>
+                                                        <th>Nombre</th>
+                                                        <th>Apellido</th>
+                                                        <th>Direccion</th>
+                                                        <th>Doctor</th>
+                                                        <th>Remedios</th>
+                                                        <th>Problemas</th>
+                                                        <th>Numero</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    <!--Fin Tabla datos-->
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <button id="botonBuscarPacientes" class="btn btn-success my-2 my-sm-0" type="submit" >Buscar</button>
                     </div>
                 </div>
             </div>
@@ -271,8 +303,42 @@
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>      
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        
+        <script src="js/scripts.js"></script>      
         <script src="js/PacienteCrud.js"></script>
+        <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript">
+            $('#Tabla').DataTable( {
+                language: {
+                    "sProcessing":     "Procesando...",
+                "sLengthMenu":     "Mostrar _MENU_ registros",
+                "sZeroRecords":    "No se encontraron resultados",
+                "sEmptyTable":     "Ningún dato disponible en esta tabla =(",
+                "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix":    "",
+                "sSearch":         "Buscar:",
+                "sUrl":            "",
+                "sInfoThousands":  ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst":    "   Primero   ",
+                    "sLast":     "   Último   ",
+                    "sNext":     "   Siguiente   ",
+                    "sPrevious": "   Anterior   "
+                },
+                "oAria": {
+                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad"
+                }
+                }
+                } );
+        </script>
+        
     </body>
 </html>

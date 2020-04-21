@@ -17,6 +17,7 @@ if(isset($_POST['rut'])) {
 
   if (!$result) {
     die('Query Failed.');
+    echo 0;  
   }
 
   echo 1;  
