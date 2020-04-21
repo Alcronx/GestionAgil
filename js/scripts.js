@@ -34,10 +34,7 @@
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
     });
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+   
   
     // Floating label headings for the contact form
     $(function() {
