@@ -19,7 +19,7 @@ if(isset($_POST['rut'])) {
     die('Query Failed.');
   }
 
-  echo "Paciente Ingresado Correctamente";  
+  echo 1;  
 
 }
 

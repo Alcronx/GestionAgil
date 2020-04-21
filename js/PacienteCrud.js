@@ -13,13 +13,38 @@ $('#FormularioPacientes').submit(e => {
           problemas: $('#Problemas').val(),
           numero: $('#Numero').val()
         };
-        const url ='../Php/AgregarPaciente.php';
+        const url ='/Proyecto%20Gestion%20Agil/php/AgregarPaciente.php';
         console.log(Paciente, url);
         $.post(url, Paciente, (response) => {
-          console.log(response);
+              
+          Resultado(response)
+
           $('#FormularioPacientes').trigger('reset');
         });
 });  
+
+
+
+//Resultado 
+function Resultado(response){
+  if(response==1){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Exito',
+      confirmButtonText: 'Aceptar'
+    })
+  }
+
+  if(response==0){
+    Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: 'Error',
+      confirmButtonText: 'Aceptar'
+    })
+  }
+}
 
 
 });
