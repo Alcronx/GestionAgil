@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-$('#botonBuscarPacientes').click(function() {
-  fetchTasks();
-})
+
 
   
 $('#FormularioPacientes').submit(e => {
@@ -38,7 +36,15 @@ function fetchTasks() {
       let template = '';
       paciente.forEach(paciente => {
         template += `
-        <tr>
+        <tr rut=${paciente.rut}>
+        <td> 
+        <button class="btnEliminar btn btn-danger">
+        Borrar 
+       </button>
+       <button class="btnEditar btn btn-warning">
+        Editar 
+       </button>
+        </td>
         <td>${paciente.rut}</td>
         <td>${paciente.nombre}</td>
         <td>${paciente.apellido}</td>
@@ -54,6 +60,58 @@ function fetchTasks() {
     }
   });
 }
+
+
+$('#botonBuscarPacientes').click(function() {
+  fetchTasks();
+})
+
+
+//Para Eliminar
+$(document).on('click', '.btnEliminar', (e) => {
+  $('#ListarPaciente').modal('hide');
+  $('#EditarPaciente').modal('show');
+  const element = $(this)[0].activeElement.parentElement.parentElement;
+  const id = $(element).attr('rut');
+  console.log(id);
+
+
+
+});
+
+
+//Para Editar
+$(document).on('click', '.btnEditar', (e) => {
+  $('#ListarPaciente').modal('hide');
+  $('#EliminarPaciente').modal('show');
+  const element = $(this)[0].activeElement.parentElement.parentElement;
+  const id = $(element).attr('rut');
+  console.log(id);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

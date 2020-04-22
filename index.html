@@ -51,7 +51,7 @@
                     </div>
                     <!--EditarPaciente-->
                     <div class="col">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#EditarPaciente">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarPaciente">
                             <div class="portfolio-item-captionEdit d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-edit fa-3x"></i></div>
                             </div>
@@ -62,7 +62,7 @@
                 <div class="row row-margin-30">
                     <!--EliminarPaciente-->
                     <div class="col">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#EliminarPaciente">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarPaciente">
                             <div class="portfolio-item-captionDelete d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-user-times fa-3x"></i></div>
                             </div>
@@ -228,7 +228,9 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <div id="ModalEliminar">
+                                            
+                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -261,6 +263,7 @@
                                             <table id="Tabla" class="table table-striped">
                                                 <thead>
                                                     <tr>
+                                                        <th>Opciones</th>
                                                         <th>Rut</th>
                                                         <th>Nombre</th>
                                                         <th>Apellido</th>
@@ -275,6 +278,7 @@
                                                 </tbody>
                                                 <tfoot>
                                                     <tr>
+                                                        <th>Opciones</th>
                                                         <th>Rut</th>
                                                         <th>Nombre</th>
                                                         <th>Apellido</th>
