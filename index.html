@@ -192,45 +192,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Editar Paciente</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-edit"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
+                                    <!--Formulario Pacientes-->
+                                    <form id="FormularioEditaPacientes">
+                                    </form>
+                                   <!--Fin Formulario Pacientes-->
                                     
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--ModalEliminar-->
-        <div class="portfolio-modal modal fade" id="EliminarPaciente" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <div id="ModalEliminar">
-                                            
-                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -260,7 +233,7 @@
                                     </div>
                                     <!--Tabla Datos-->
                                         <div class="table-responsive">
-                                            <table id="Tabla" class="table table-striped">
+                                            <table id="Tabla" class="table table-striped Tabla">
                                                 <thead>
                                                     <tr>
                                                         <th>Opciones</th>
@@ -312,7 +285,7 @@
         <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
         <script type="text/javascript">
-            $('#Tabla').DataTable( {
+            $('.Tabla').DataTable( {
                 language: {
                     "sProcessing":     "Procesando...",
                 "sLengthMenu":     "Mostrar _MENU_ registros",
