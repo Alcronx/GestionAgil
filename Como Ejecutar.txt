@@ -1,0 +1,12 @@
+1-Instalar Xamp y ejecutar Mysql y apache  Ejemplo: http://prntscr.com/s44xgo
+
+Como Instalar: https://www.youtube.com/watch?v=taBxyM4w9rw
+
+2-Una vez Instalado Abrir Php Admin url:"http://localhost/phpmyadmin" y importar base de datos
+  Con el archivo: "gestionagil";
+
+3-Meterse A la carpeta htdocs y dejar esta carpeta en dicho lugar
+
+	Ubicacion htdocs: "C:\xampp\htdocs\"
+
+4-Meterse a localhost para Probar El Programa
