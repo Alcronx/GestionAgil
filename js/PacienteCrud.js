@@ -39,7 +39,7 @@ $('#FormularioPacientes').submit(e => {
           problemas: $('#Problemas').val(),
           numero: $('#Numero').val()
         };
-        const url ='/Proyecto%20Gestion%20Agil/php/AgregarPaciente.php';
+        const url ='php/AgregarPaciente.php';
         $.post(url,Paciente, (response) => {
               
           Resultado(response)
@@ -51,7 +51,7 @@ $('#FormularioPacientes').submit(e => {
 //Rellenar Datatable Con datos Pacientes
 function fetchTasks() {
   $.ajax({
-    url: '/Proyecto%20Gestion%20Agil/php/ListaPaciente.php',
+    url: 'php/ListaPaciente.php',
     type: 'GET',
     success: function(response) {
       console.log(response);
@@ -99,7 +99,7 @@ $(document).on('click', '.btnEliminar', (e) => {
   const Paciente = {
     rutt: rut
   };
-  const url ='/Proyecto%20Gestion%20Agil/php/Eliminar.php';
+  const url ='php/Eliminar.php';
         $.post(url,Paciente, (response) => {
           console.log(response);
           if(response==1){
@@ -133,7 +133,7 @@ $(document).on('click', '.btnEditar', (e) => {
   const Paciente = {
     rutt: rut
   };
-  const url ='/Proyecto%20Gestion%20Agil/php/Editar.php';
+  const url ='php/Editar.php';
         $.post(url,Paciente, (response) => {
           console.log(response);
           const paciente = JSON.parse(response);
@@ -220,7 +220,7 @@ $('#FormularioEditaPacientes').submit(e => {
     problemas: $('#Problemas1').val(),
     numero: $('#Numero1').val()
   };
-  const url ='/Proyecto%20Gestion%20Agil/php/Editarv2.php';
+  const url ='php/Editarv2.php';
   console.log(Paciente);
   $.post(url,Paciente, (response) => {
         
