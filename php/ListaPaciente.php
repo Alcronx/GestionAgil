@@ -1,9 +1,9 @@
 <?php
 
-  include('conexion.php');
+  include('Conexion.php');
 
-  $query = "SELECT * from pacientes";
-  $result = mysqli_query($connection, $query);
+  $query = "SELECT * FROM pacientes";
+  $result = mysqli_query($connection,$query);
   if(!$result) {
     die('Error En la query'. mysqli_error($connection));
   }

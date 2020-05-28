@@ -1,13 +1,15 @@
 
 <?php
-    session_start();
+    
 
     CerrarSesion();
     
     function CerrarSesion() {
-        session_unset(); 
-        // destroy the session 
-        session_destroy();
-        echo("Desconectado");
+            
+            session_start (); // inicializa sesión
+            $_SESSION = array();
+            session_destroy (); // destruir sesión
+            echo(true);
+                  
     }
 ?>

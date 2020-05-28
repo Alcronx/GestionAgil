@@ -10,9 +10,9 @@ class Database{
 
     public function __construct(){
         $this->host = 'localhost';
-        $this->db = 'gestionagil';
-        $this->user = 'root';
-        $this->password = '';
+        $this->db = 'almanext_GestionAgil';
+        $this->user = 'almanext_Alex';
+        $this->password = '12345';
         $this->charset = 'utf8mb4';
     }
 
@@ -28,7 +28,7 @@ class Database{
     
             return $pdo;
         }catch(PDOException $e){
-            print_r('Error connection: ' . $e->getMessage());
+            print_r('Error de coneccion: ' . $e->getMessage());
         }
     }
 

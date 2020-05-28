@@ -11,7 +11,7 @@
             break;
 
             case 2:
-            header('location: ModuloPacientes.php');
+                header('location: ModuloPacientes.php');
             break;
 
             default:
@@ -158,7 +158,7 @@
 
                                             <div class="control-group">
                                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                    <input class="form-control" id="Contraseña" name="password" type="text"
+                                                    <input class="form-control" id="Contraseña" name="password" type="password"
                                                         placeholder="Contraseña" required="required"
                                                         data-validation-required-message="Por Favor Ingrese Dato" />
                                                     <p class="help-block text-danger"></p>

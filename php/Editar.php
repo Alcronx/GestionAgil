@@ -1,6 +1,6 @@
 <?php
 
-  include('conexion.php');
+  include('Conexion.php');
   $rut = $_POST['rutt'];
   $query = "SELECT * from pacientes where rut = '$rut'";
   $result = mysqli_query($connection, $query);

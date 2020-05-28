@@ -1,7 +1,7 @@
 <?php
 
 $connection = mysqli_connect(
-  'localhost', 'root','', 'gestionagil'
+  'localhost','almanext_Alex','12345', 'almanext_GestionAgil'
 );
 
 ?>

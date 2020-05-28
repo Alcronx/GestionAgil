@@ -1,0 +1,67 @@
+[25-May-2020 23:28:10 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[25-May-2020 23:31:46 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[25-May-2020 23:33:16 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:47:12 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:49:28 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:50:55 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:52:01 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:52:10 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:54:30 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 18:54:36 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:03:55 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:09:06 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:09:11 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:10:28 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:14:55 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
+[26-May-2020 19:16:24 America/Santiago] PHP Parse error:  syntax error, unexpected 'ql' (T_STRING), expecting ')' in /home4/almanext/public_html/SpringPacientesGestionAgil/database.php on line 31
+[26-May-2020 19:16:28 America/Santiago] PHP Parse error:  syntax error, unexpected 'ql' (T_STRING), expecting ')' in /home4/almanext/public_html/SpringPacientesGestionAgil/database.php on line 31
+[26-May-2020 19:16:29 America/Santiago] PHP Parse error:  syntax error, unexpected 'ql' (T_STRING), expecting ')' in /home4/almanext/public_html/SpringPacientesGestionAgil/database.php on line 31
+[26-May-2020 19:16:46 America/Santiago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home4/almanext/public_html/SpringPacientesGestionAgil/index.php on line 26
