@@ -5,7 +5,7 @@
     if(!isset($_SESSION['rol'])){
         header('location: index.php');
     }else{
-        if($_SESSION['rol'] != 2){
+        if($_SESSION['rol'] != 1){
             header('location: index.php');
         }
     }
@@ -19,7 +19,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Spring Pacientes</title>
+        <title>Spring MasterCm</title>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -36,7 +36,7 @@
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Delivery 3ra Edad</a><button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Pacientes</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Administracion</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><button type="button" id="botonLogout" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger btn btn-info" >Cerrar Sesion</button></li>
                     </ul>
                 </div>
@@ -46,7 +46,7 @@
         <section class="page-section portfolio mt-10" id="portfolio">
             <div class="container">
                 <!-- Paciente Cabezera-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pacientes</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">MasterCm</h2>
                 <!--Icono para separar Cabezeras-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -61,36 +61,36 @@
                             <div class="portfolio-item-captionAdd d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/AgregarPaciente.png" alt="" />
+                            <img class="img-fluid" src="assets/img/MasterCm/AgregarPaciente.jpg" alt="" />
                         </div>
                     </div>
                     <!--EditarPaciente-->
                     <div class="col">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarPaciente">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarUsuarios">
                             <div class="portfolio-item-captionEdit d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-edit fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/EditarPaciente.png" alt="" />
+                            <img class="img-fluid" src="assets/img/MasterCm/EditarUsuarios.jpg" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="row row-margin-30">
                     <!--EliminarPaciente-->
                     <div class="col">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarPaciente">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarUsuarios">
                             <div class="portfolio-item-captionDelete d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-user-times fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/EliminarPaciente.png" alt="" />
+                            <img class="img-fluid" src="assets/img/MasterCm/EliminarUsuarios.jpg" alt="" />
                         </div>
                     </div>
                     <!--ListarPaciente-->
                     <div class="col">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarPaciente">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ListarUsuarios">
                             <div class="portfolio-item-captionList d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-list fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ListaPaciente.png" alt="" />
+                            <img class="img-fluid" src="assets/img/MasterCm/ListaUsuarios.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -126,59 +126,27 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                    <!--Formulario Pacientes-->
-                                   <form id="FormularioPacientes">
+                                   <form id="FormularioUsuarios">
                                     <div class="control-group">
                                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Rut" type="text" placeholder="Rut" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
+                                            <input class="form-control" id="NombreUsuario" type="text" placeholder="Nombre De Usuario" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
 
                                     <div class="control-group">
                                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Nombre" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
+                                            <input class="form-control" id="Contraseña" type="text" placeholder="Contraseña" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
 
                                     <div class="control-group">
                                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Apellido" type="text" placeholder="Apellido" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="control-group">
-                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Numero" type="number" placeholder="Numero" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="control-group">
-                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Direccion" type="text" placeholder="Direccion" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="control-group">
-                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Doctor" type="text" placeholder="Doctor" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="control-group">
-                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <input class="form-control" id="Remedios" type="text" placeholder="Remedios" required="required" data-validation-required-message="Por Favor Ingrese Dato" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="control-group">
-                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <textarea class="form-control" id="Problemas" rows="5" placeholder="Problemas" required="required" data-validation-required-message="Porfavor Ingrese Datos"></textarea>
+                                        <select class="browser-default custom-select" name="Rol" id="Rol">
+                                                <option value="1">Admin</option>
+                                                <option value="2">CentroMedico</option>                                                                                           
+                                        </select>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
@@ -215,7 +183,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!--Formulario Pacientes-->
-                                    <form id="FormularioEditaPacientes">
+                                    <form id="FormularioEditarUsuarios">
                                     </form>
                                    <!--Fin Formulario Pacientes-->
                                     
@@ -228,7 +196,7 @@
             </div>
         </div>
         <!--ModalListar-->
-        <div class="portfolio-modal modal fade" id="ListarPaciente" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="ListarUsuarios" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -252,39 +220,24 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Opciones</th>
-                                                        <th>Rut</th>
                                                         <th>Nombre</th>
-                                                        <th>Apellido</th>
-                                                        <th>Direccion</th>
-                                                        <th>Doctor</th>
-                                                        <th>Remedios</th>
-                                                        <th>Problemas</th>
-                                                        <th>Numero</th>
+                                                        <th>Contraseña</th>
+                                                        <th>Rol</th>
                                                         
                                                     </tr>
                                                 </thead>
-                                                <tbody id="TbodyTablaPacientes">
+                                                <tbody id="TbodyTablaUsuarios">
                                                     <td>Opciones</td>
-                                                    <td>rut</td>
-                                                    <td>nombre</td>
-                                                    <td>apellido</td>
-                                                    <td>direccion</td>
-                                                    <td>doctor</td>
-                                                    <td>remedios</td>
-                                                    <td>problemas</td>
-                                                    <td>Numero</td>
+                                                    <td>Nombre</td>
+                                                    <td>Contraseña</td>
+                                                    <td>Rol</td>                                                 
                                                 </tbody>
                                                 <tfoot>
                                                     <tr>
                                                         <th>Opciones</th>
-                                                        <th>Rut</th>
                                                         <th>Nombre</th>
-                                                        <th>Apellido</th>
-                                                        <th>Direccion</th>
-                                                        <th>Doctor</th>
-                                                        <th>Remedios</th>
-                                                        <th>Problemas</th>
-                                                        <th>Numero</th>
+                                                        <th>Contraseña</th>
+                                                        <th>Rol</th>
                                                     </tr>
                                                 </tfoot>
                                             </table>
@@ -306,7 +259,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>      
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>      
-        <script src="js/PacienteCrud.js"></script>
+        <script src="js/AdminCrud.js"></script>
         <script src="js/Logout.js"></script>
         <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 

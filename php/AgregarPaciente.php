@@ -20,7 +20,10 @@ if(isset($_POST['rut'])) {
     echo 0;  
   }
 
-  echo 1;  
+  if ($result) {
+    echo 1;  
+  }
+  
 
 }
 

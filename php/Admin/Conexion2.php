@@ -1,7 +1,7 @@
 <?php
 
 $connection = mysqli_connect(
-  'localhost','root','', 'gestionAgil'
+  'localhost','root','','gestionAgil'
 );
 
 ?>

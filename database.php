@@ -10,9 +10,9 @@ class Database{
 
     public function __construct(){
         $this->host = 'localhost';
-        $this->db = 'almanext_GestionAgil';
-        $this->user = 'almanext_Alex';
-        $this->password = '12345';
+        $this->db = 'gestionAgil';
+        $this->user = 'root';
+        $this->password = '';
         $this->charset = 'utf8mb4';
     }
 

@@ -139,8 +139,7 @@ $(document).on('click', '.btnEditar', (e) => {
           const paciente = JSON.parse(response);
           let template = '';
           paciente.forEach(paciente => {
-            template += `
-            
+            template += `           
             <input type="hidden" id="Rut1" value="${paciente.rut}">
                                     <div class="control-group">
                                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
